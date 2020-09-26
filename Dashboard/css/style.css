@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* Added it by yourself*/
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* general styles */
+body {  
+    background: #eff2f8;
+    font: 16px/1.31 Helvetica, Arial, sans-serif;
+    min-width: 1440px;
+}.wrapper {
+    min-height: 100vh;
+}
+.header {
+    background: #fff;
+    padding: 24px 0;
+    font-weight: bold;
+    box-shadow: 0 4px 4px 0 rgba(79, 88, 178, 0.25);
+}
+.navi {
+    display: flex;
+    justify-content: flex-start;
+}
+.logo {
+    color: #6a75ca;
+    margin: 0 48px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 32px;
+}
+.navi-list {
+    display: flex;
+    padding: 0 69px;
+}
+.navi-list li {
+    margin: 0 0 0 50px;
+}
+.navi-list li a {
+    font-size: 16px;
+    line-height: 32px;
+    color: #131320;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+}
+.navi-list li a:hover {
+    color: #6a75ca;
+    border-bottom: 1px solid #6a75ca;
+}
+.content {
+    padding: 0 0 30px; 
+    height: 100%;
+}
+.title {
+    padding: 100px 0 80px;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 63px;
+    color: #131320;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.section {
+    padding: 10px 48px;
+    font-family: "Courier New", Courier, monospace;
+    color: #7d868e;
+}
+.filter {
+    filter: drop-shadow(0 4px 10px rgba(79, 88, 178, 0.25));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+} 
+.section-small {
+    width: 240px;
+    height: 240px;
+    margin: 0 19px 48px 19px;
+    clip-path: polygon(0 0, 75% 0%, 100% 25%, 100% 100%, 0 100%);
+}    
+.section-big {
+    width: 796px;
+    height: 240px;
+    margin: 0 0 48px;
+    clip-path: polygon(0 0, 92% 0%, 100% 25%, 100% 100%, 0 100%);
+}
+.section-small, .section-big {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px; 
+} 
+.section-small:hover, .section-big:hover {
+    overflow: auto;
+}
+.section-small.iris, .section-big.iris {
+    background-color: #6a75ca;
+    color: #fff;
+}
